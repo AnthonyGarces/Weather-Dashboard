@@ -10,17 +10,17 @@
 </head>
 
 <body>
-    <div id="SearchBox">
-        <label for name="CitySearch">Search for a city:</label>
+    <div id="Search-Box">
+        <label for="Search-Bar">Search for a city:</label>
         <br>
-        <input type="text">
-        <input type="submit" value="Send Request">
+        <input type="text" id="Search-Bar">
+        <input type="submit" id="Submitbtn" value="Send Request">
     </div>
-    <div id="DayWeather">
+    <div id="Day-Weather">
         <P>
-            <span id="City">Austin</span>      
+            <span id="City">Some City</span>      
             <span id="Date">5/6/2019</span>        
-            <span id="ImgIcon"><img src="something" alt="no weather available :("></span>
+            <span id="Img-Icon"><img src="something" alt="no weather available :("></span>
         </P>
         <p>
             Temperature: <span id="Temperature"></span>
@@ -32,13 +32,14 @@
             Wind Speed: <span id="WindSpeed"></span> MPH
         </p>
         <p>
-            UV Index: <span id="Temperature"></span>
+            UV Index: <span id="UVIndex"></span>
         </p>
     </div>
-    <div id="5DayWeather">
+    <div id="5-Day-Weather">
 
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
