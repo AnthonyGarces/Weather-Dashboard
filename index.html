@@ -10,86 +10,102 @@
 </head>
 
 <body>
-    <div id="Search-Box">
-        <label for="Search-Bar">Search for a city:</label>
-        <br>
-        <input type="text" id="Search-Bar">
-        <input type="submit" id="Submitbtn" value="Send Request">
-    </div>
-    <div id="Day-Weather">
-        <P>
-            <span id="City">Some City</span>      
-            <span id="Date">5/6/2019</span>        
-            <span id="Img-Icon"><img src="something" alt="no weather available :("></span>
-        </P>
-        <p>
-            Temperature: <span id="Temperature"></span> F
-        </p>
-        <p>
-            Humidity: <span id="Humidity"></span>%
-        </p>
-        <p>
-            Wind Speed: <span id="WindSpeed"></span> MPH
-        </p>
-        <p>
-            UV Index: <span id="UVIndex"></span>
-        </p>
-    </div>
-    <div id="5-Day-Weather">
-        <div id="5-Day1">
-            <Span id="5-Date1"></Span>
-            <br>
-            <span id="5Img-Icon1"><img src="something" alt="no weather available :("></span>
-            <br>
-            Temp: <span id="5-Temp1"></span> F
-            <br>
-            Humidity: <span id="5-Hum1"></span>%
-        </div>
-        <div id="5-Day1">
-                <Span id="5-Date1"></Span>
-                <br>
-                <span id="5Img-Icon1"><img src="something" alt="no weather available :("></span>
-                <br>
-                Temp: <span id="5-Temp1"></span> F
-                <br>
-                Humidity: <span id="5-Hum1"></span>%
-            </div>
-            <div id="5-Day2">
-                    <Span id="5-Date2"></Span>
-                    <br>
-                    <span id="5Img-Icon2"><img src="something" alt="no weather available :("></span>
-                    <br>
-                    Temp: <span id="5-Temp2"></span> F
-                    <br>
-                    Humidity: <span id="5-Hum2"></span>%
+    <header class="container-fluid text-center bg-dark p-2 text-white">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <div id="Search-Box" class="container-fluid">
+        <div class="row">
+            <aside class="col-lg-3">
+                <h5 class="mt-5">Search for a city:</h5>
+                <div class="form-inline form-group">
+                    <input type="text" id="Search-Bar" class="form-control">
+                    <button type="submit" id="Submitbtn" value="Send Request" class="btn btn-primary">Submit</button>
                 </div>
-            <div id="5-Day3">
-                <Span id="5-Date3"></Span>
-                <br>
-                <span id="5Img-Icon3"><img src="something" alt="no weather available :("></span>
-                <br>
-                Temp: <span id="5-Temp3"></span> F
-                <br>
-                Humidity: <span id="5-Hum3"></span>%
+                <!--target this div with the history tag-->
+                <ul class="list-group history">
+
+                </ul>
+            </aside>
+            <div class="col-lg-9">
+                <div id="today" class="mt-3">
+                    <P>
+                            <span id="City">Some City</span>      
+                            <span id="Date">5/6/2019</span>        
+                            <span id="Img-Icon"><img src="something" alt="no weather available :("></span>
+                        </P>
+                        <p>
+                            Temperature: <span id="Temperature"></span> F
+                        </p>
+                        <p>
+                            Humidity: <span id="Humidity"></span>%
+                        </p>
+                        <p>
+                            Wind Speed: <span id="WindSpeed"></span> MPH
+                        </p>
+                        <p>
+                            UV Index: <span id="UVIndex"></span>
+                        </p>
+                </div>
+                <div id="forecast" class="mt-3">
+                    <div id="5-Day1">
+                        <Span id="5-Date1"></Span>
+                        <br>
+                        <span id="5Img-Icon1"><img src="something" alt="no weather available :("></span>
+                        <br>
+                        Temp: <span id="5-Temp1"></span> F
+                        <br>
+                        Humidity: <span id="5-Hum1"></span>%
+                    </div>
+                    <div id="5-Day1">
+                        <Span id="5-Date1"></Span>
+                        <br>
+                        <span id="5Img-Icon1"><img src="something" alt="no weather available :("></span>
+                        <br>
+                        Temp: <span id="5-Temp1"></span> F
+                        <br>
+                        Humidity: <span id="5-Hum1"></span>%
+                    </div>
+                    <div id="5-Day2">
+                        <Span id="5-Date2"></Span>
+                        <br>
+                        <span id="5Img-Icon2"><img src="something" alt="no weather available :("></span>
+                        <br>
+                        Temp: <span id="5-Temp2"></span> F
+                        <br>
+                        Humidity: <span id="5-Hum2"></span>%
+                    </div>
+                    <div id="5-Day3">
+                        <Span id="5-Date3"></Span>
+                        <br>
+                        <span id="5Img-Icon3"><img src="something" alt="no weather available :("></span>
+                        <br>
+                        Temp: <span id="5-Temp3"></span> F
+                        <br>
+                        Humidity: <span id="5-Hum3"></span>%
+                    </div>
+                    <div id="5-Day4">
+                        <Span id="5-Date4"></Span>
+                        <br>
+                        <span id="5Img-Icon4"><img src="something" alt="no weather available :("></span>
+                        <br>
+                        Temp: <span id="5-Temp4"></span> F
+                        <br>
+                        Humidity: <span id="5-Hum4"></span>%
+                    </div>
+                    <div id="5-Day5">
+                        <Span id="5-Date5"></Span>
+                        <br>
+                        <span id="5Img-Icon5"><img src="something" alt="no weather available :("></span>
+                        <br>
+                        Temp: <span id="5-Temp5"></span> F
+                        <br>
+                        Humidity: <span id="5-Hum5"></span>%
+                    </div>
+                </div>
             </div>
-            <div id="5-Day4">
-                <Span id="5-Date4"></Span>
-                <br>
-                <span id="5Img-Icon4"><img src="something" alt="no weather available :("></span>
-                <br>
-                Temp: <span id="5-Temp4"></span> F
-                <br>
-                Humidity: <span id="5-Hum4"></span>%
-            </div>
-            <div id="5-Day5">
-                <Span id="5-Date5"></Span>
-                <br>
-                <span id="5Img-Icon5"><img src="something" alt="no weather available :("></span>
-                <br>
-                Temp: <span id="5-Temp5"></span> F
-                <br>
-                Humidity: <span id="5-Hum5"></span>%
-            </div>
+        </div>
+    </div>
+        
                 
 
     </div>
